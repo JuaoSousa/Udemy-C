@@ -24,7 +24,9 @@ int main()
 
      salarioNovo = salarioVelho + (salarioVelho * (taxa / 100));
 
-    printf("O salario reajustado sera de: %.2f",salarioNovo );
+    printf("Salario Velho........ %.2f \n",salarioVelho );
+    printf("Taxa de reajuste..... %.2f%% \n", taxa);
+    printf("Salario Novo......... %.2f \n", salarioNovo);
 
     
 }
