@@ -30,7 +30,8 @@ int main()
      printf("4 - Relatorio de Inclusoes \n");
      scanf("%d",&codigo);
 
-    switch{
+    switch(codigo)
+           {
            case 0:
             printf("Encerrando programa. \n");
           break;
