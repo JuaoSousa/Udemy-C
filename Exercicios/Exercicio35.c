@@ -18,6 +18,7 @@ Escreva um programa que leia o código e façaas tarefas, conforme a tabela de c
 int main()
 {
     int codigo, entradas,saidas;estoque; 
+    entrada = saida = estoque = 0
 
   do{
      system("cls")
@@ -39,18 +40,31 @@ int main()
      case 1:
       printf("Incluindo uma unidade no estoque \n");
       estoque++;
+      entrada++;
     break;
      case 2:
       printf("Excluindo uma unidade no estoque \n");
-      estoque--, saidas++; 
+
+      if (estoque == 0)
+       {
+          printf("Estoque está vazio")
+       }
+      else
+       {
+        printf("Excluindo uma unidade no estoque \n");
+        estoque--;
+        saidas++; 
+
+        }
+   
     break;
      case 3:
       printf("Mostrando o total disponivel no estoque \n");
-      printf("Total: %d \n", estoque)
+      printf("Total: %d \n", estoque);
     break;
      case 4:
       printf("Mostrando o total de entradas no estoque \n");
-      printf("Total de entradas: %d \n", entradas)
+      printf("Total de entradas: %d \n", entradas);
     break;
      case 5:
       printf("Mostrando o total de saidas no estoque")
@@ -62,7 +76,7 @@ int main()
      
     system("pause")
 
-     } while (codigo != 0)
+     } while (codigo != 0);
 
 }
 
