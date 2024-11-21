@@ -17,7 +17,7 @@ O menu estã descrito abaixo:
 
 int main()
 {
-    int codigo, contPan,contVas,contCha 
+    int codigo, contPan,contVas,contCha;
 
   do{
      
